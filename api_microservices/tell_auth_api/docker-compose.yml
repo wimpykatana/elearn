@@ -1,0 +1,27 @@
+version: '2.2'
+services:
+  tellauthapidbhost:
+    image: mongo
+    ports:
+      - "27017"
+  tellauthapiredis:
+    image: redis
+    ports:
+      - "6379"
+  tellauthapi:
+    build: .
+    ports: 
+      - "3003:3003"
+    depends_on:
+      - tellauthapidbhost
+    volumes:
+      - .:/app
+      - /app/node_modules/
+    environment:
+      - DB_HOST
+      - DB_PORT
+      - DB_NAME
+      - SECRET_TOKEN
+      - ACTIVE_LOGIN
+      - ACTIVE_TOKEN_H
+      - ROOT_FOLDER_UPLOAD

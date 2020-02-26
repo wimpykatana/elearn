@@ -1,0 +1,25 @@
+const express = require('express');
+const router = express.Router();
+const Controler = require('./controller');
+const validation = require('./validation');
+const jwt = require('../../services/jwt');
+const reCaptcha = require('../../services/reCaptcha.js');
+
+router.get('/course', Controler.getAllcontent);
+router.post('/course', jwt.verify, validation.create, Controler.createContent);
+router.post('/course/search', reCaptcha.verify, Controler.search);
+router.get('/course/total', Controler.total);
+router.get('/course/:id', Controler.getSingleContent);
+router.get('/coursetitle/:title',Controler.getSingleContentfrontend);
+router.post('/course/watched/:id', validation.watched, Controler.watched);
+router.get('/course/watched', Controler.watchedList);
+router.get('/coursebycategory/:categoryid', validation.getContentsByCategory, Controler.getContentByCategoryLanding);
+router.post('/c/uploadvideo', Controler.uploadVideo);
+router.post('/c/uploadvideoposter', Controler.uploadVideoPoster);
+router.post('/c/uploaddisplayimage', Controler.uploadDisplayImage);
+router.put('/course/', Controler.updateSingleContent);
+router.get('/coursebycategorydetail/:id/:categoryId', Controler.getContentByCategoryDetail);
+router.post('/ratevideo', jwt.verify, Controler.rateVideo);
+router.post('/israted', Controler.isRated);
+router.get('/whatsapp', validation.whatsapp, Controler.whatsapp);
+module.exports = router;

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CoreUI for React - Open Source Bootstrap Admin Template">
+    <meta name="author" content="trimegah elearning team">
+    <meta name="keyword" content="elearning,stock market">
+    <title>Admin - Trimegah eLearning</title>
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor_css/bootstrap.css">
+    
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor_css/owl.carousel.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor_css/themify-icons.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor_css/magnific-popup.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor_css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor_css/normalize.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor_css/responsive.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/style.css">
+<!-- 
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> -->
+    
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // React.js ID
+      gtag('config', 'UA-118965717-6');
+    </script>-->
+
+
+  </head> 
+
+  <!-- BODY options, add following classes to body to change options
+
+  // Header options
+  1. '.header-fixed'					- Fixed Header
+
+  // Brand options
+  1. '.brand-minimized'       - Minimized brand (Only symbol)
+
+  // Sidebar options
+  1. '.sidebar-fixed'					- Fixed Sidebar
+  2. '.sidebar-hidden'				- Hidden Sidebar
+  3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+  4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+  5. '.sidebar-compact'			  - Compact Sidebar
+
+  // Aside options
+  1. '.aside-menu-fixed'			- Fixed Aside Menu
+  2. '.aside-menu-hidden'			- Hidden Aside Menu
+  3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+  // Breadcrumb options
+  1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
+  // Footer options
+  1. '.footer-fixed'					- Fixed footer
+
+  -->
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+  
+       
+     <!-- required -->    
+       <!-- <script src="%PUBLIC_URL%/assets/js/vendor/bootstrap.min.js"></script> -->
+       <!--Plugin-JS-->
+       <!-- <script src="%PUBLIC_URL%/assets/js/owl.carousel.min.js"></script> -->
+       <!-- <script src="%PUBLIC_URL%/assets/js/contact-form.js"></script> -->
+       <!-- <script src="%PUBLIC_URL%/assets/js/jquery.parallax-1.1.3.js"></script> -->
+       <!-- <script src="%PUBLIC_URL%/assets/js/scrollUp.min.js"></script> -->
+       <!-- <script src="%PUBLIC_URL%/assets/js/magnific-popup.min.js"></script> -->
+       <!-- <script src="%PUBLIC_URL%/assets/js/wow.min.js"></script> -->
+       <!--Main-active-JS-->
+       <!-- <script src="%PUBLIC_URL%/assets/js/main.js"></script> -->
+
+       <script>
+      /*$(document).ready(function () {
+         var itemsMainDiv = ('.MultiCarousel');
+         var itemsDiv = ('.MultiCarousel-inner');
+         var itemWidth = "";
+       
+         $('.leftLst, .rightLst').click(function () {
+           var condition = $(this).hasClass("leftLst");
+           if (condition)
+             click(0, this);
+           else
+             click(1, this)
+         });
+       
+         ResCarouselSize();
+       
+       
+       
+       
+         $(window).resize(function () {
+           ResCarouselSize();
+         });
+       
+         //this function define the size of the items
+         function ResCarouselSize() {
+           var incno = 0;
+           var dataItems = ("data-items");
+           var itemClass = ('.item');
+           var id = 0;
+           var btnParentSb = '';
+           var itemsSplit = '';
+           var sampwidth = $(itemsMainDiv).width();
+           var bodyWidth = $('body').width();
+           $(itemsDiv).each(function () {
+             id = id + 1;
+             var itemNumbers = $(this).find(itemClass).length;
+             btnParentSb = $(this).parent().attr(dataItems);
+             itemsSplit = btnParentSb.split(',');
+             $(this).parent().attr("id", "MultiCarousel" + id);
+       
+       
+             if (bodyWidth >= 1200) {
+               incno = itemsSplit[3];
+               itemWidth = sampwidth / incno;
+             }
+             else if (bodyWidth >= 992) {
+               incno = itemsSplit[2];
+               itemWidth = sampwidth / incno;
+             }
+             else if (bodyWidth >= 768) {
+               incno = itemsSplit[1];
+               itemWidth = sampwidth / incno;
+             }
+             else {
+               incno = itemsSplit[0];
+               itemWidth = sampwidth / incno;
+             }
+             $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+             $(this).find(itemClass).each(function () {
+               $(this).outerWidth(itemWidth);
+             });
+       
+             $(".leftLst").addClass("over");
+             $(".rightLst").removeClass("over");
+       
+           });
+         }
+       
+       
+         //this function used to move the items
+         function ResCarousel(e, el, s) {
+           var leftBtn = ('.leftLst');
+           var rightBtn = ('.rightLst');
+           var translateXval = '';
+           var divStyle = $(el + ' ' + itemsDiv).css('transform');
+           var values = divStyle.match(/-?[\d\.]+/g);
+           var xds = Math.abs(values[4]);
+           if (e == 0) {
+             translateXval = parseInt(xds) - parseInt(itemWidth * s);
+             $(el + ' ' + rightBtn).removeClass("over");
+       
+             if (translateXval <= itemWidth / 2) {
+               translateXval = 0;
+               $(el + ' ' + leftBtn).addClass("over");
+             }
+           }
+           else if (e == 1) {
+             var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+             translateXval = parseInt(xds) + parseInt(itemWidth * s);
+             $(el + ' ' + leftBtn).removeClass("over");
+       
+             if (translateXval >= itemsCondition - itemWidth / 2) {
+               translateXval = itemsCondition;
+               $(el + ' ' + rightBtn).addClass("over");
+             }
+           }
+           $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+         }
+       
+         //It is used to get some elements from btn
+         function click(ell, ee) {
+           var Parent = "#" + $(ee).parent().attr("id");
+           var slide = $(Parent).attr("data-slide");
+           ResCarousel(ell, Parent, slide);
+         }
+       
+       });*/
+     </script>
+       
+       <!-- Menu scrollbar -->
+    <script>
+      /*
+       var hidWidth;
+       var scrollBarWidths = 40;
+       
+       var widthOfList = function(){
+         var itemsWidth = 0;
+         $('.list li').each(function(){
+         var itemWidth = $(this).outerWidth();
+         itemsWidth+=itemWidth;
+         });
+         return itemsWidth;
+       };
+       
+       var widthOfHidden = function(){
+         return (($('.wrapper').outerWidth())-widthOfList()-getLeftPosi())-scrollBarWidths;
+       };
+       
+       var getLeftPosi = function(){
+         return $('.list').position().left;
+       };
+       
+       var reAdjust = function(){
+         if (($('.wrapper').outerWidth()) < widthOfList()) {
+         $('.scroller-right').show();
+         }
+         else {
+         $('.scroller-right').hide();
+         }
+         
+         if (getLeftPosi()<0) {
+         $('.scroller-left').show();
+         }
+         else {
+         $('.item').animate({left:"-="+getLeftPosi()+"px"},'slow');
+         $('.scroller-left').hide();
+         }
+       }
+       
+       reAdjust();
+       
+       $(window).on('resize',function(e){  
+         reAdjust();
+       });
+       
+       $('.scroller-right').click(function() {
+         
+         $('.scroller-left').fadeIn('slow');
+         $('.scroller-right').fadeOut('slow');
+         
+         $('.list').animate({left:"+="+widthOfHidden()+"px"},'slow',function(){
+       
+         });
+       });
+       
+       $('.scroller-left').click(function() {
+         
+         $('.scroller-right').fadeIn('slow');
+         $('.scroller-left').fadeOut('slow');
+         
+         $('.list').animate({left:"-="+getLeftPosi()+"px"},'slow',function(){
+         
+         });
+       });*/
+     </script>
+       <!-- End Menu scrollbar -->
+  </body>
+</html>

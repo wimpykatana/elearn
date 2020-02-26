@@ -1,0 +1,25 @@
+version: '2.2'
+services:
+  mongodb:
+    image: mongo
+    command: [--auth]
+    ports:
+      - "27017"
+  redis:
+    image: redis
+    ports:
+      - "6379"
+  server:
+    build: .
+    ports: 
+      - "3000:3000"
+    depends_on: 
+      - mongodb
+    volumes:
+      - .:/app/server/
+      - /app/server/node_modules/
+    environment:
+      - DB_HOST
+      - DB_PORT
+      - DB_NAME
+      - SECRET_TOKEN

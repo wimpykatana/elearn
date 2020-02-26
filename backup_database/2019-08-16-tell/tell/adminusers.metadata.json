@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"tell.adminusers"},{"v":2,"unique":true,"key":{"email":1},"name":"email_1","ns":"tell.adminusers","background":true}],"uuid":"6d76fa6c627c46bfa5d7c15cbdf4c81c"}

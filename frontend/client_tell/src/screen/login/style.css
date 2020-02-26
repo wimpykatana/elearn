@@ -1,0 +1,11 @@
+.forget-pass-holder{
+    text-align: right;
+}
+
+.header > h3 {
+    text-align: center;
+}
+
+.fade.show{
+    opacity: 1;
+}

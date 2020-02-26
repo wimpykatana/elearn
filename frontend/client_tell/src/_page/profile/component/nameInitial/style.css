@@ -1,0 +1,11 @@
+.file-upload{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+
+.file-upload-holder{
+    width: 141px;
+    height: 150px;
+    margin: 0 auto;
+}

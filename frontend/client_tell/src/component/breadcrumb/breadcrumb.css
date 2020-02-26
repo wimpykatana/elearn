@@ -1,0 +1,30 @@
+
+.breadcrumb-tell > li > span {
+  color: #003370;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ratings-popup-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .7);
+  z-index: 91;
+}
+
+.popup-ratings{
+  display: block;
+  background: rgba(255,255,255,1);
+  padding: 20px;
+  max-width: 420px;
+  width: 95%;
+  margin: 45px auto 0;
+  height: 250px;
+}
+
+.close-popup{
+  text-align: right;
+}

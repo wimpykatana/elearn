@@ -1,0 +1,6 @@
+{
+    "api"       : "http://localhost:3000/api/v1",
+    "domain"    : "http://localhost:1338",
+    "static"    : "http://localhost:1338",
+    "socket_host"    : "localhost:3000"
+}

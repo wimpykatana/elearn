@@ -1,0 +1,34 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, 0.5);
+  z-index: 9999;
+  padding: 10px;
+  -webkit-transform: translate3d(0,0,0);
+}
+.popup_inner {
+  top: 10%;
+  margin: auto;
+  /* background: white; */
+  /* width: 420px; */
+}
+
+@media (max-width: 480px) and (max-aspect-ratio: 13/9) {
+  
+  .popup::before{
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+  }
+  
+  .popup{
+    position: relative;
+    margin: -65px 0 0 0;
+    background-color: rgba(0,0,0, 0);
+  }
+}

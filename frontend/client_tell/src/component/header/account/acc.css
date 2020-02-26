@@ -1,0 +1,155 @@
+.loginsignBtn{
+    padding: 0 !important;
+}
+.btn-silver {
+    background-color: #e5e5e5;
+    color: #000000;
+}
+
+.form-search {
+    background-color: #f2f2f2;
+    height: 40px;
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+ul .search-drop-down {
+    width:100%;
+    position:absolute;
+    top:45px;
+    left:0;
+    max-height:120px;
+    overflow-y: scroll;
+    z-index:1;
+}
+
+.open > .dropdown-menu {
+    display: block;
+}
+
+#search-option li ul {
+    line-height: 40px;
+}
+
+.detail-name {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    line-height: 40px;
+    padding-left: 10px;
+    margin: 0px 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 83%;
+    height: 30px;
+}
+
+.detail-name-p {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    line-height: 30px;
+    padding-left: 10px;
+    margin: 0px 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 83%;
+    height: 30px;
+}
+
+
+#search-option ul ul {
+    top: auto;
+    width: 250px;
+    position: absolute;
+    z-index: 999;
+    text-align: left;
+    display: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+/* ======================================================================================================
+   MEDIA QUERY
+====================================================================================================== */
+/*********************************************************** GLOBAL RESPONSIVE */
+/********************************************************************************** MOBILE POTRAIT ********/
+@media (max-width: 480px) and (max-aspect-ratio: 13/9) {
+    .mainmenu-area #nav-dropdown ul{
+        /* height: 130px; */
+    }
+
+    .navbar-right{
+        background-color: white;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px 0 10px;
+    }
+    .user-avatar{
+        margin: 12px 4px 0 10px;
+    }
+}
+/********************************************************************************** MOBILE LANDSCAPE ********/
+@media (min-width: 481px) and (max-width: 767px) and (min-aspect-ratio: 13/9) {
+    .mainmenu-area #nav-dropdown ul{
+        /* height: 130px; */
+    }
+    .navbar-right{
+        background-color: white;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px 0 10px;
+    }
+    .user-avatar{
+        margin: 12px 4px 0 10px;
+    }
+
+}
+/********************************************************************************** TABLET POTRAIT ********/
+@media (min-width: 768px) and (max-width: 991px) and (max-aspect-ratio: 13/9) {
+    .mainmenu-area #nav-dropdown ul{
+        /* height: 130px; */
+    }
+    .navbar-right{
+        background-color: white;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px 0 10px;
+    }
+    .user-avatar{
+        margin: 12px 4px 0 10px;
+    }
+}
+/********************************************************************************** TABLET LANDSCAPE ********/
+@media (min-width: 992px) and (max-width: 1199px) and (min-aspect-ratio: 13/9) {
+    .mainmenu-area #nav-dropdown ul{
+        /* height: 130px; */
+    }
+    .navbar-right{
+        background-color: white;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px 0 10px;
+    }
+    .user-avatar{
+        margin: 5px 0 0 0;
+    }
+
+    .container-header-menu {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 1000px;
+    }
+} 

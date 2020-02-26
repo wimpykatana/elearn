@@ -1,0 +1,39 @@
+.account-header{
+    background-color: #f8a010;
+    padding: 5px 10px !important;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.iconeditaccount{
+    cursor: pointer;
+}
+
+.passwordHolder{
+    margin: 30px 0 0 0;
+}
+
+.account-holder{
+    margin: 0 10px;
+}
+
+
+.btn-change-pasw{
+    padding: 5px 10px;
+}
+
+.text-danger::first-letter{
+    text-transform: capitalize;
+}
+
+.input-holder-acc{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.input-holder-acc::after{
+    content: " ";
+    display: block;
+    clear: both;
+}

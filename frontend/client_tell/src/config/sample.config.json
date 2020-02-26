@@ -1,0 +1,9 @@
+{
+    "api"       : "http://localhost:3000/api/v1",
+    "auth"      : "http://loclhost:3004",
+    "domain"    : "http://localhost:9000",
+    "static"    : "http://192.168.3.58",
+    "env": "development",
+    "reCaptchaKey": "6Ld-l68UAAAAANiiPwlKXZFUsjbIyDKdaXd6G3EF",
+    "keyEncrypt":"rahasiasceret"
+}

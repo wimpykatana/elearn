@@ -1,0 +1,1 @@
+module.exports = ['tell-client', 'tell-mobile']

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+while !$(nc -z emitendbhost 27017); do
+  echo "Waiting Mongo up...."
+  sleep 3
+done
+
+npm start

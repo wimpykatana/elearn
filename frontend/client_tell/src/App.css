@@ -1,0 +1,44 @@
+.form-control:focus{
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  outline: none !important;
+  border: 1px solid #ced4da;
+}
+
+.btn:focus,
+.btn:active,
+button:focus,
+button:active{
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  outline: none !important;
+}
+
+.input-group-text,
+.form-control{
+  border-radius: 2px;
+}
+
+.login-page-holder,
+.signup-holder{
+  /* border: 1px solid black; */
+
+  width: 95%;
+  margin: 20px auto 320px;
+
+}
+
+.bot-signup-holder,
+.bot-login-holder{
+  border-top: 1px solid grey;
+  padding: 20px 0 0 0;
+  display: block;
+  text-align: center;
+}
+.bot-signup-holder span.text,
+.bot-login-holder span.text{
+  padding: 10px;
+}
+
+
+

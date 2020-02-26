@@ -1,0 +1,111 @@
+.file-upload {
+    width: 141px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.image-upload-wrap {
+    border: 1px solid #c1c1c1;
+    position: relative;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    font-size: 5em;
+    text-align: center;
+    color: #f58220;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    /* background: url(images/default-avatar.png) no-repeat center; */
+}
+
+.fullname-holder{
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+
+.title-holder{
+    word-wrap: break-word;
+}
+
+.fullname-holder > p{
+    margin-bottom: 0;
+}
+
+.my-acc-holder{
+    padding: 42px 0 0 0;
+}
+
+.profile-bar {
+    height: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.profile-bar >span {
+    text-align: center !important;
+    color: #000 !important;
+    font-size: 9px !important;
+    right: 45%;
+    margin-top: -2px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.brand {
+    background-color: #003370;
+    color: #ffffff;
+    line-height: 40px;
+    display: block;
+    padding: 0px 10px;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.brandsub {
+    background-color: #f2f2f2;
+    color: #000000;
+    line-height: 40px;
+    display: block;
+    padding: 0px 10px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #003370;
+    color: #ffffff;
+}
+
+.nav-menu-profile{
+    margin-bottom: 20px;
+}
+
+.react-date-picker--disabled .react-date-picker__inputGroup__divider,
+.react-date-picker--disabled .react-date-picker__inputGroup__leadingZero{
+  opacity: 1;
+  color: rgba(85,85,85,.3);
+}
+
+textarea:disabled,
+input:disabled{
+  opacity: 1;
+}
+
+textarea:disabled{
+  border-radius: 0;
+}
+
+
+

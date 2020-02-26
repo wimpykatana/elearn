@@ -1,0 +1,76 @@
+.profile-header-profile{
+    background-color: #f8a010;
+    padding: 5px 10px !important;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.iconeditprofile{
+    cursor: pointer;
+}
+
+.otherLinks{
+    margin: 30px 0 0 0;
+}
+
+.profile-holder{
+    margin: 0 10px;
+}
+
+.input-profile{
+    padding: 5px 0 5px 10px;
+
+}
+
+.react-date-picker__wrapper{
+    border-color: lightgray !important;
+    padding: 2px 0 2px 10px;
+}
+
+.react-date-picker__inputGroup > input[disabled],
+.react-date-picker__wrapper > button[disabled]{
+    cursor: not-allowed;
+}
+
+.btn-submit-update{
+    padding: 5px 20px;
+}
+
+.react-date-picker__calendar--open > div:nth-child(2)::after{
+    display: block;
+    clear: both;
+    content: " ";
+}
+
+.rreact-date-picker__calendar--open > div:nth-child(2){
+    display: block !important;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.react-date-picker__calendar--open{
+    bottom: 0 !important;
+}
+
+.form-control{
+    margin-bottom: 0;
+}
+
+.form-control:focus{
+    border: 1px solid  rgba(0, 0, 0, .3);
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.input-holder-prof{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.input-holder-prof::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
