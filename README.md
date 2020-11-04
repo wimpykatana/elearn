@@ -2,9 +2,6 @@
 - Ratings
 - Google Social network
 
-# Learning Management System :book:
-
-This is Trimegah (TRIM) Learning Management System
 
 ## Getting Started
 How to start use this code, you need to install some software in your computer
